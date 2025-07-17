@@ -17,4 +17,5 @@ jobs:
           base_uri: https://eu.ast.checkmarx.net/ 
           cx_client_id: KB_GHA 
           cx_client_secret: cg1Tql2aYUmOD4wNkUhiSZ2OG5CcxA8q
-          additional_params: "--scan-types scs --scs-engines scorecard --scs-repo-url http://github.com/Kabacx/Juiceshop-public.git --scs-repo-token ${{ secrets.GH_TOKEN }} --debug"
+          CX_REPO_TOKEN : ${{ secrets.GH_TOKEN }}
+          additional_params: --scan-types scs --scs-engines scorecard --scs-repo-url http://github.com/Kabacx/Juiceshop-public.git --scs-repo-token $CX_REPO_TOKEN --debug
