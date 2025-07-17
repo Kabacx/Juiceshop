@@ -15,6 +15,6 @@ jobs:
           project_name: KB_GHA_SCS_JShop
           cx_tenant: DP_WP_ACCOUNT
           base_uri: https://eu.ast.checkmarx.net/ 
-          cx_client_id: KB_GHA #${{ secrets.CX_CLIENT_ID }}
-          cx_client_secret: uczmWFBV0eBwyV5WV09BC3UXdKfZNY24 #${{ secrets.CX_CLIENT_SECRET }}
+          cx_client_id: KB_GHA 
+          cx_client_secret: uczmWFBV0eBwyV5WV09BC3UXdKfZNY24
           additional_params: "--scan-types scs --scs-engines scorecard --scs-repo-url http://github.com/Kabacx/Juiceshop-public.git --scs-repo-token ${{ secrets.GH_TOKEN }} --debug"
