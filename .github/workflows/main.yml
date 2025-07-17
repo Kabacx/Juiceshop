@@ -18,4 +18,4 @@ jobs:
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
           GITHUB_TOKEN : ${{ secrets.GH_TOKEN }}
-          additional_params: "--debug --scan-types scs --scs-engines scorecard --scs-repo-url http://github.com/Kabacx/Juiceshop-public.git --scs-repo-token ${GITHUB_TOKEN}" 
+          additional_params: "--debug --scan-types scs --scs-engines scorecard --scs-repo-url http://github.com/Kabacx/Juiceshop-public.git --scs-repo-token '${{ secrets.GH_TOKEN }}'" 
